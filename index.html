@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>kcalTrax - Support</title>
+	
+	<meta charset="utf-8">
+	<meta name="author" content="Kai Usher">
+	<meta name="description" content="Support for the kcalTrax app.">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<!--CSS-->
+	<link rel="stylesheet" type="text/css" href="style.css">
+	
+	<!--FONTS-->
+	<link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+	
+</head>
+
+<body>
+
+	<div class="nav" id="nav">
+		
+		<ul>
+			<li class="sub1"><a href="#home">home</a></li>
+			<li class="sub1"><a href="#about">about</a></li>
+			<li class="sub1"><a href="#navigation">navigation</a></li>
+			<li class="sub1"><a href="#logCals">log calories</a></li>
+			<li class="sub1"><a href="#food">food</a></li>
+			<li class="sub1"><a href="#recipes">recipes</a></li>
+			<li class="sub1"><a href="#shopping">shopping list</a></li>
+		<ul>
+		
+	</div>
+	
+	<div class="main" id="main">
+	
+		<a id="menu">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+			  <path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z"/>
+			</svg>
+		</a>
+		
+		<div class="header">
+			<h1>kcalTrax support</h1>
+		</div>
+		
+		<div class="home" id="#home">
+		
+			<p>So you don't understand the app? That just means you're fat <i>and</i> stupid. Use this website as a support manual for the kcalTrax app.</p>
+			<p>If you have any further questions, contact us on <strong>notachance@goaway.com</strong> and we'll be sure to ignore you asap.</p>
+			
+			<hr>
+			
+		</div>
+		
+		<div class="about" id="#about">
+		
+			<h2>about</h2>
+		
+			<p>kcalTrax is an app designed to make it easy for you to track the calories you are consuming on a daily basis.</p>
+			<p>The app includes a food datadase, a recipe database and a shopping list for your convenience - all of these features are explained in detail below.</p>
+			
+			<hr>
+			
+		</div>
+		
+		<div class="navigation" id="#navigation">
+		
+			<h2>navigation</h2>
+		
+			<p>We designed kcalTrax to operate like most other apps you're likely to have on your phone. It's honestly offensive you are so incapable. All you have to do is click. Just click stuff. But not the order takeaway button. Never click that.</p>
+			
+			<hr>
+			
+		</div>
+		
+		<div class="logCals" id="#logCals">
+		
+			<h2>log calories</h2>
+		
+			<p>Now this is the important stuff. This is where you are held accountable for that £2.99 Big Mac that you thought was a good idea at the time but now regret because you have to watch that calorie count increase over your daily allowance due to your lack of self control. Disgusting.</p>
+			
+			<hr>
+			
+		</div>
+		
+		<div class="food" id="#food">
+		
+			<h2>food</h2>
+		
+			<p>I swear this section better be filled up with carrots and kale or we have a problem.</p>
+			
+			<hr>
+			
+		</div>
+		
+		<div class="recipes" id="#recipes">
+		
+			<h2>recipes</h2>
+		
+			<p>Like you'll even look at these recipes. It's not like there's one for instant noodles.</p>
+			
+			<hr>
+			
+		</div>
+		
+		<div class="shopping" id="#shopping">
+		
+			<h2>shopping list</h2>
+		
+			<p>Under no circumstance should this look like the menu boards in McDonald's.</p>
+			
+			<hr>
+			
+		</div>
+	
+	</div>
+	
+	<script>
+	
+		var menu = document.querySelector('#menu');
+		var main = document.querySelector('#main');
+		var nav = document.querySelector('#nav');
+
+		menu.addEventListener('click', function(e) {
+			nav.classList.toggle('open');
+			e.stopPropagation();
+		});
+		
+		main.addEventListener('click', function() {
+			nav.classList.remove('open');
+		});
+	
+	</script>
+
+</body>
+
+</html>
