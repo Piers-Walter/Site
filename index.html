@@ -19,121 +19,105 @@
 
 <body>
 
-	<div class="nav" id="nav">
+	<!-- Nav Overlay -->
+	<div id="myNav" class="overlay">
+
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+		<!-- Overlay content -->
+		<div class="overlay-content">
+			<a href="#about" onclick="closeNav()">about</a>
+			<a href="#home" onclick="closeNav()">home</a>
+			<a href="#recipes" onclick="closeNav()">recipes</a>
+			<a href="#food" onclick="closeNav()">food</a>
+			<a href="#shopping" onclick="closeNav()">shopping list</a>
+			<a href="#settings" onclick="closeNav()">settings</a>
+			<a href="#statistics" onclick="closeNav()">statistics</a>
+			<a href="#profile" onclick="closeNav()">profile</a>
+			<a href="#logging" onclick="closeNav()">logging calories</a>
+		</div>
+
+	</div>
+
+	<!-- Hamburger icon -->
+	<span onclick="openNav()" class="hamburgerIcon">
+		<div class="burgerBar"></div>
+		<div class="burgerBar"></div>
+		<div class="burgerBar"></div>
+	</span>
+	
+	<!--Help content -->
+	<div class="container">
+	
+		<h1>kcalTrax Support</h1>
 		
-		<ul>
-			<li class="sub1"><a href="#home">home</a></li>
-			<li class="sub1"><a href="#about">about</a></li>
-			<li class="sub1"><a href="#navigation">navigation</a></li>
-			<li class="sub1"><a href="#logCals">log calories</a></li>
-			<li class="sub1"><a href="#food">food</a></li>
-			<li class="sub1"><a href="#recipes">recipes</a></li>
-			<li class="sub1"><a href="#shopping">shopping list</a></li>
-		<ul>
+		<h2 id="about">about</h2>
+		<p>kcalTrax is an app designed to make it easy for you to track the calories you are consuming on a daily basis.</p>
+		<p>The app includes a fully editable food database, a fully editable recipe database, a shopping list, reminder notifications and detailed statistics - all of these features are explained in detail below.</p>
 		
+		<h2 id="home">home</h2>
+		<p>This is the page that you land on upon opening the kcalTrax app, and can be considered as the central location of the application.</p>
+		<p>The top proportion of this page contains an overview of your current daily calorie intake. The progress circle indicates how many calories have been consumed so far in the day; when the blue circle gets completed you have met your goal - congratulations! Just below the progress circle is a reminder of your goal, another reminder of your current level of consumption, and how many calories you need to consume in order to meet your goal.</p>
+		<p>Below the calorie overview are some quick utility buttons. INSERT BUTTON FUNCTIONALITY.</p>
+		<p>The final item(s) displayed on the home screen are the items (both food and meals/recipes) which you have already logged in the day.</p>
+		
+		<h2 id="recipes">recipes</h2>
+		<h3>view recipes</h3>
+		<p>On this page of the kcalTrax app you can view all of the recipes which are stored within the application's database. </p>
+		<p>Each recipe is displayed with its title, a brief description of the recipe, a picture of the finished product and the number of calories the recipe contains. Simply scroll through the list to find the recipe you want and click on it for more information.</p>
+		<p>At the top of the page is a search feature. Here you can type in a recipe and the app will search through the database and return any matching results. By clicking the filter icon to the left of the search bar, you can add additional parameters to finetune your recipe search.</p>
+		<p>DETAILS ABOUT FEATURES SUCH AS ADDING TO SHOPPING LIST.</p>
+		<h3>add recipe</h3>
+		<p>This is the page in the kcalTrax app where you can add a new recipe to the database. This is very easy to do; simply fill in the indicated text fields with all the information about the recipe and upload a picture from either your device gallery or take one with your device's camera.</p>
+		<p>This recipe will then show up in the main recipe page!</p>
+		
+		<h2 id="food">food</h2>
+		<h3>view foods</h3>
+		<p>On this page of the kcalTrax app you can view all of the individual foods which are stored within the application's database.</p>
+		<p>Each food is displayed with the name of the food, a brief description and the number of calories a serving of the food contains. Simply scroll through the list to find the food you want and click on it for more information.</p>
+		<p>At the top of the page is a search feature. Here you can type in a food and the app will search through the database and return any matching results. By clicking the filter icon to the left of the search bar, you can add additional parameters to finetune your food search.</p>
+		<h3>add food</h3>
+		<p>This is the page in the kcalTrax app where you can add new food to the database. There are two different ways of adding food:</p>
+		<p>You can manually add the nutritional information by typing the information into the text fields, or you can choose to use the inbuilt barcode scanner functionality. By clicking on the 'launch barcode scanner' button, the app will use your device's camera as a barcode scanner.</p>
+		<p>This food will now show up in the main food page!</p>
+		
+		<h2 id="shopping">shopping list</h2>
+		<p>The kcalTrax app also contains a built-in shopping list for your convenience. The list is split into two parts - the top half shows the items which you need to/intent to buy on your next shopping trip, and the bottom half contains items which have already been checked off the list.</p>
+		<p>To add an item to the list simply type the item you wish to add into the text field at the top of the page and click the plus button, or enter on your device. FILTER ICON?</p>
+		<p>Whilst you're out on your shopping trip, press the checkbox next to an item you've just picked up in order to 'cross it off' and move it to the bottom section of the list.</p>
+		
+		<h2 id="settings">settings</h2>
+		<p>The settings page of the kcalTrax is where you can alter the functionality to help the app meet your needs.</p>
+		<p>Notifications can be turned on or off using the checkbox. When notifications are enabled you have the option to set the times at which you tend to eat your daily meals, and thus the app will notify you to log your calories at an appropriate time.</p>
+		
+		<h2 id="statistics">statistics</h2>
+		<p>The statistics page of the kcalTrax app acts as a basis for reviewing your calorie, and other, consumption information.</p>
+		<p>On the top portion of the display you can view a graph which shows your calorie consumption over the past 7 days. The horizontal line on the graph corresponds to your personal calorie target so you can see how well you're doing at a glance. SWIPE FOR MORE GRAPHS?</p>
+		<p>Below the graph is a collection of facts which are gathered from the information you have provided in the kcalTrax app. Simply scroll through the list to learn some interesting insights to your eating habits!</p>
+		
+		<h2 id="profile">profile</h2>
+		<p>On the profile page you can view all of your relevant personal health information. The kcalTrax app uses the health data you input in order to calculate your base metabolic rate and advised calorie goal.</p>
+		<p>Using the 'edit profile' button you can edit your health data as you progress on your fitness journey, and thus ensure that kcalTrax always provides an accurate target for you to aim for. You can also edit the advised goal if you have personal goals you're working towards.</p>
+		
+		<h2 id="logging">logging calories</h2>
+		<p></p>
+	
 	</div>
 	
-	<div class="main" id="main">
 	
-		<a id="menu">
-			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-			  <path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z"/>
-			</svg>
-		</a>
-		
-		<div class="header">
-			<h1>kcalTrax support</h1>
-		</div>
-		
-		<div class="home" id="#home">
-		
-			<p>So you don't understand the app? That just means you're fat <i>and</i> stupid. Use this website as a support manual for the kcalTrax app.</p>
-			<p>If you have any further questions, contact us on <strong>notachance@goaway.com</strong> and we'll be sure to ignore you asap.</p>
-			
-			<hr>
-			
-		</div>
-		
-		<div class="about" id="#about">
-		
-			<h2>about</h2>
-		
-			<p>kcalTrax is an app designed to make it easy for you to track the calories you are consuming on a daily basis.</p>
-			<p>The app includes a food datadase, a recipe database and a shopping list for your convenience - all of these features are explained in detail below.</p>
-			
-			<hr>
-			
-		</div>
-		
-		<div class="navigation" id="#navigation">
-		
-			<h2>navigation</h2>
-		
-			<p>We designed kcalTrax to operate like most other apps you're likely to have on your phone. It's honestly offensive you are so incapable. All you have to do is click. Just click stuff. But not the order takeaway button. Never click that.</p>
-			
-			<hr>
-			
-		</div>
-		
-		<div class="logCals" id="#logCals">
-		
-			<h2>log calories</h2>
-		
-			<p>Now this is the important stuff. This is where you are held accountable for that £2.99 Big Mac that you thought was a good idea at the time but now regret because you have to watch that calorie count increase over your daily allowance due to your lack of self control. Disgusting.</p>
-			
-			<hr>
-			
-		</div>
-		
-		<div class="food" id="#food">
-		
-			<h2>food</h2>
-		
-			<p>I swear this section better be filled up with carrots and kale or we have a problem.</p>
-			
-			<hr>
-			
-		</div>
-		
-		<div class="recipes" id="#recipes">
-		
-			<h2>recipes</h2>
-		
-			<p>Like you'll even look at these recipes. It's not like there's one for instant noodles.</p>
-			
-			<hr>
-			
-		</div>
-		
-		<div class="shopping" id="#shopping">
-		
-			<h2>shopping list</h2>
-		
-			<p>Under no circumstance should this look like the menu boards in McDonald's.</p>
-			
-			<hr>
-			
-		</div>
-	
-	</div>
 	
 	<script>
 	
-		var menu = document.querySelector('#menu');
-		var main = document.querySelector('#main');
-		var nav = document.querySelector('#nav');
+		/* Open when someone clicks on the span element */
+		function openNav() {
+			document.getElementById("myNav").style.width = "100%";
+		}
 
-		menu.addEventListener('click', function(e) {
-			nav.classList.toggle('open');
-			e.stopPropagation();
-		});
-		
-		main.addEventListener('click', function() {
-			nav.classList.remove('open');
-		});
+		/* Close when someone clicks on the "x" symbol inside the overlay */
+		function closeNav() {
+			document.getElementById("myNav").style.width = "0%";
+		}
 	
 	</script>
 
 </body>
-
-</html>
