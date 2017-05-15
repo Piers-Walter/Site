@@ -41,9 +41,7 @@
 
 	<!-- Hamburger icon -->
 	<span onclick="openNav()" class="hamburgerIcon">
-		<div class="burgerBar"></div>
-		<div class="burgerBar"></div>
-		<div class="burgerBar"></div>
+		<p>&#x25BC;</p>
 	</span>
 	
 	<!--Help content -->
@@ -84,7 +82,7 @@
 		<p>At the top of the page is a search feature. Here you can type in a food and the app will search through the database and return any matching results. By clicking the filter icon to the left of the search bar, you can add additional parameters to finetune your food search.</p>
 		<h3>Edit Food</h3>
 		<p>To edit a food, swipe from left to right on the food you wish to edit in order to reveal the hidden utility buttons. Click on the orange edit button and you will be navigated to the edit page for that food.</p>
-		<p>Here you can edit the information about a food! Simply make your changes in the appropriate fields and be sure to save your changes by clicking on the save changes button.</p><h3>Add Food</h3>
+		<p>Here you can edit the information about a food! Simply make your changes in the appropriate fields and be sure to save your changes by clicking on the save changes button.</p>
 		<h3>Add Food</h3>
 		<p>This is the page in the kcalTrax app where you can add new food to the database. There are two different ways of adding food:</p>
 		<p>You can manually add the nutritional information by typing the information into the text fields, or you can choose to use the inbuilt barcode scanner functionality. By clicking on the 'launch barcode scanner' button, the app will use your device's camera as a barcode scanner.</p>
@@ -127,12 +125,12 @@
 	
 		/* Open when someone clicks on the span element */
 		function openNav() {
-			document.getElementById("myNav").style.width = "100%";
+			document.getElementById("myNav").style.height = "100%";
 		}
 
 		/* Close when someone clicks on the "x" symbol inside the overlay */
 		function closeNav() {
-			document.getElementById("myNav").style.width = "0%";
+			document.getElementById("myNav").style.height = "0%";
 		}
 	
 	</script>

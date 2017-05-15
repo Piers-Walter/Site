@@ -5,8 +5,13 @@ body {
 .hamburgerIcon {
 	cursor: pointer;
 	position: fixed;
-    top: 20px;
-    left: 20px;
+    top: 0px;
+    right: 25px;
+}
+
+.hamburgerIcon p {
+	font-size: 1.8em;
+	color: #64ACED;
 }
 
 .burgerBar {
@@ -17,16 +22,16 @@ body {
 }
 
 .overlay {
-    height: 100%;
-    width: 0;
+    height: 0;
+    width: 100%;
     position: fixed;
     z-index: 1;
     left: 0;
     top: 0;
     background-color: #64ACED;
     background-color: rgba(100, 172, 237, 0.9);
-    overflow-x: hidden;
-    transition: 0.5s;
+    overflow-y: hidden;
+    transition: 0.3s;
 }
 
 .overlay-content {
