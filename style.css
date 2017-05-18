@@ -83,12 +83,12 @@ body {
 	
 }
 
-.shopping_images {
+.images {
 	width: 100%;
 }
 
 img {
-	width: 80%;
+	width: 60%;
 	display: block;
 	margin: auto;
 }
